@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>架空:くさつなかよし園</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/entry.js" defer></script>
+  </head>
+  <body id="js-body">
+    <header class="l_header">
+      <h1 class="l_header-logo">
+        <a href="" class="l_header-logo_link">
+          <img
+            src="img/logo-sm.png"
+            alt="ロゴ"
+            class="l_header-logo_img"
+            width="268"
+            height="160"
+            decoding="async"
+          />
+        </a>
+      </h1>
+      <!-- /.l_header-logo -->
+
+      <nav class="l_header-nav" id="js-nav">
+        <div class="l_header-nav_bg"></div>
+        <ul class="l_header-nav_list">
+          <li class="l_header-nav_item">
+            <a href="index.html" class="l_header-nav_link">トップページ</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="about.html" class="l_header-nav_link">園について</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="hoiku.html" class="l_header-nav_link">園での生活</a>
+          </li>
+          <li class="l_header-logo__pc">
+            <a href="" class="l_header-logo_link">
+              <img
+                src="img/logo-lg.png"
+                alt="ロゴ"
+                class="l_header-logo_img"
+                width="366"
+                height="118"
+                decoding="async"
+              />
+            </a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="entry.html" class="l_header-nav_link">入園案内</a>
+          </li>
+          <li class="l_header-nav_item" entry-kengaku-link>
+            <a href="entry.html#kengaku" class="l_header-nav_link"
+              >見学について</a
+            >
+          </li>
+          <li class="l_header-nav_item">
+            <a href="faq.html" class="l_header-nav_link">よくある質問</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.l_header-nav -->
+
+      <button class="l_header_cta-btn_wrap">
+        <a href="tel:000-000-0000" class="l_header_cta-btn">
+          <img
+            src="img/icons/tel.svg"
+            alt=""
+            class="l_header_cta-btn_icon"
+            width="36"
+            height="36"
+          />
+          <span class="l_header_cta-text">お問合せ</span>
+        </a>
+      </button>
+      <!-- /.l_header_cta-btn_wrap -->
+    </header>
+    <!-- /.l_header -->
+    <div class="m_kv entry-kv">
+      <div class="m_kv_contents l_container-lg">
+        <h1 class="m_kv_ttl entry-kv_ttl">入園案内</h1>
+        <!-- /.m_kv_contents l_container-lg -->
+      </div>
+    </div>
+    <!-- /.m_kv_ttl entry-kv_ttl -->
+
+    <main class="l_main">
+      <div class="l_contents entry_heading">
+        <p class="entry_heading_text">
+          当園の雰囲気を感じていただくためにも、
+          <span class="entry-heading_text_accent"
+            >ぜひ見学にお越しください。</span
+          >
+        </p>
+        <button class="m_btn-wrapper m_btn-wrapper__hoiku">
+          <a href="entry.html#kengaku" class="m_btn">見学について</a>
+        </button>
+      </div>
+      <!-- /.entry_heading -->
+
+      <section class="l_section entry-flow" id="flow">
+        <div class="l_contents entry-flow_contents">
+          <div class="m_section_ttl-wrap entry-flow_ttl-wrap">
+            <h2 class="m_section_ttl entry-flow_ttl">入園までの流れ</h2>
+          </div>
+          <div class="l_section_body entry-flow_body">
+            <div class="entry-flow_step-part entry-flow_step-part0d1">
+              <div class="l_container-sm entry-flow_container">
+                <div class="entry-flow_step_heading">
+                  <div class="entry-flow_step_ttls">
+                    <div class="entry-flow_step_number">Step1</div>
+                    <h3 class="entry-flow_step_ttl">認定区分の確認</h3>
+                  </div>
+                  <p class="entry-flow_step_text">
+                    <a href="" class="entry-flow_step_link">こちら</a>
+                    から、該当区分の確認ができます(下記のような市役所のページに遷移します)。フローチャートに従って、認定区分をご確認ください。
+                  </p>
+                </div>
+                <div class="entry-flow_city-img_wrap">
+                  <img
+                    src="/img/city-flow.svg"
+                    alt="市の認定区分フローチャート"
+                    class="entry-flow_city-img"
+                  />
+                </div>
+                <div class="m_city_cta entry-flow_city_cta">
+                  <p class="m_city_cta_name">くさつ市幼児課</p>
+                  <a href="" class="m_city_cta_link"
+                    >https://---city.kosodate.org.jp</a
+                  >
+                  <a href="tel:000-000-0000" class="m_city_cta_tel">
+                    <span class="m_cta_call-icon m_city_cta_icon"></span>
+                    000-000-0000
+                  </a>
+                  <p class="m_city_cta_reception">
+                    受付時間：月～金 9:00~17:00
+                  </p>
+                </div>
+                <!-- /.m_city_cta -->
+                <div class="entry-flow_caution">
+                  <div class="entry-flow_caution_contents">
+                    <div class="entry-flow_caution_heading">ご注意ください</div>
+                    <p class="entry-flow_caution_text">
+                      当園では、保育認定(2号認定、3号認定)の方のみご利用いただくことができます。
+                      <span class="entry-flow_caution_red"
+                        >教育認定(1号)の方はご利用いただくことができませんので</span
+                      >
+                      、ご了承ください。
+                    </p>
+                  </div>
+                </div>
+                <!-- /.entry-flow_caution -->
+              </div>
+              <!-- /..l_container-lg.entry-flow_container -->
+            </div>
+            <!-- /.entry-flow_step-part -->
+            <div class="entry-flow_step-part entry-flow_step-part02">
+              <div class="l_container-sm entry-flow_container">
+                <div class="entry-flow_step_heading">
+                  <div class="entry-flow_step_ttls">
+                    <div class="entry-flow_step_number">Step2</div>
+                    <h3 class="entry-flow_step_ttl">申請</h3>
+                  </div>
+                  <p class="entry-flow_step_text">
+                    申請は、市役所の窓口にしていただきます。申請時に必要な書類等のご確認は、市役所までお願いいたします。
+                  </p>
+                </div>
+              </div>
+              <!-- /.l_container-lg.entry-flow_container -->
+            </div>
+            <!-- /.entry-flow_step-part -->
+            <div class="entry-flow_step-part entry-flow_step-part03">
+              <div class="l_container-sm entry-flow_container">
+                <div class="entry-flow_step_heading">
+                  <div class="entry-flow_step_ttls">
+                    <div class="entry-flow_step_number">Step3</div>
+                    <h3 class="entry-flow_step_ttl">審査～決定</h3>
+                  </div>
+                  <p class="entry-flow_step_text">
+                    市役所にて審査・決定がされます。
+                    <br />決定通知書(教育・保育給付認定通知書および、保育園入所承諾通知書)が交付されます。利用期間や利用区分をご確認ください。
+                  </p>
+                </div>
+              </div>
+              <!-- /.l_container-lg entry-flow_container -->
+            </div>
+            <!-- /.entry-flow_step-part -->
+            <div class="entry-flow_step-part entry-flow_step-part04">
+              <div class="l_container-sm entry-flow_container">
+                <div class="entry-flow_step_heading">
+                  <div class="entry-flow_step_ttls">
+                    <div class="entry-flow_step_number">Step4</div>
+                    <h3 class="entry-flow_step_ttl">入園説明会</h3>
+                  </div>
+                </div>
+                <div class="entry-flow_caution entry-flow_caution_nyuen">
+                  <div class="entry-flow_caution_contents">
+                    <p class="entry-flow_caution_text_front">
+                      入園前に、説明会および制服採寸・物品購入会があります。
+                      <br
+                        class="u_break"
+                      />お手数ですが、入園されるお子様と一緒にご参加ください。
+                    </p>
+                    <p class="entry-flow_caution_text_back">
+                      開催時期
+                      <br />4月に入園される方：2～3月ごろ
+                      <br />年度途中に入園される方：随時
+                      <br
+                        class="u_break__remove"
+                      />(入所決定後に日程調整を行います)
+                    </p>
+                  </div>
+                </div>
+                <!-- /.entry-flow_caution -->
+              </div>
+              <!-- /.l_container-lg.entry-flow_container -->
+            </div>
+            <!-- /.entry-flow_step-part -->
+          </div>
+          <!-- /.entry-flow_body -->
+          <div class="entry-narashi_body">
+            <div class="l_container-sm entry-narashi_container">
+              <h3 class="entry-narashi_ttl">～入園後の慣らし保育について～</h3>
+              <p class="entry-narashi_text">
+                当園では、保育園での生活に慣れてもらうために、入園後「慣らし保育」を行っております。
+                <br /><span class="entry-narashi_text_accent"
+                  >実施期間やスケジュールについては、見学等でお問い合わせください。</span
+                >
+              </p>
+            </div>
+            <!-- /.l_container-lg entry-flow_container -->
+          </div>
+          <!-- /.entry-narashi -->
+        </div>
+        <!-- /.l_contents -->
+      </section>
+      <!-- /.l_section entry-flow --->
+
+      <section class="l_section entry-kengaku js-entry-kengaku" id="kengaku">
+        <div class="l_contents">
+          <div class="entry-kengaku_heading">
+            <div class="m_section_ttl-wrap entry-kengaku_ttl-wrap">
+              <h2 class="m_section_ttl entry-kengaku_ttl">見学について</h2>
+            </div>
+            <p class="entry-kengaku_heading_text">
+              当園では、入園のお申込みをいただく前に、見学していただくことをおすすめしています。
+            </p>
+          </div>
+          <div class="l_container-lg entry-kengaku_container">
+            <ul class="l_section_body entry-kengaku_list">
+              <li class="m_post_item entry-kengaku_item">
+                <div
+                  class="m_img-wrap entry-kengaku_img-wrap entry-kengaku_img-wrap__01"
+                >
+                  <img
+                    src="img/facility01.jpg"
+                    alt="施設の写真"
+                    class="m_img entry-kengaku_img"
+                    width="1920"
+                    height="1280"
+                  />
+                </div>
+                <div class="m_post_contents entry-kengaku_contents">
+                  <div class="m_post_texts entry-kengaku_post_texts">
+                    <h3 class="m_post_ttl entry-kengaku_post_ttl">
+                      保育園の雰囲気や、周囲の環境が分かる！
+                    </h3>
+                    <p class="m_post_desc entry-kengaku_desc">
+                      「ここに通ったらこんな感じかな？」をよりイメージしやすくなります。
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <!-- /.entry-kengaku_item -->
+              <li class="m_post_item entry-kengaku_item">
+                <div
+                  class="m_img-wrap entry-kengaku_img-wrap entry-kengaku_img-wrap__02"
+                >
+                  <img
+                    src="img/top-kv02.jpg"
+                    alt="解決した風の写真"
+                    class="m_img entry-kengaku_img"
+                    width="1920"
+                    height="1280"
+                  />
+                </div>
+                <div class="m_post_contents entry-kengaku_contents">
+                  <div class="m_post_texts entry-kengaku_post_texts">
+                    <h3 class="m_post_ttl entry-kengaku_post_ttl">
+                      見学の中で疑問を解消できる！
+                    </h3>
+                    <p class="m_post_desc entry-kengaku_desc">
+                      実際に見て浮かんだ疑問に、すぐお答えすることができます。またご希望があれば、ご家庭の状況等を伺って、細やかなアドバイスをすることも可能です。
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <!-- /.entry-kengaku_item -->
+            </ul>
+            <!-- /.l_section_body entry-kengaku_list -->
+            <ul class="entry-kengaku_hope_list">
+              <li class="entry-kengaku_hope_item">
+                <p
+                  class="entry-kengaku_hope_comment entry-kengaku_hope_comment__01"
+                >
+                  英語教育や運動あそびを
+                  <br />実際に見てみたい！
+                </p>
+                <div
+                  class="entry-kengaku_hope_img-wrap entry-kengaku_hope_img-wrap__01"
+                >
+                  <img
+                    src="/img/kengaku-ledy.png"
+                    alt=""
+                    class="entry-kengaku_hope_img"
+                    width="342"
+                    height="474"
+                    decoding="async"
+                  />
+                </div>
+              </li>
+              <!-- /.entry-kengaku_hope_item -->
+              <li class="entry-kengaku_hope_item">
+                <p
+                  class="entry-kengaku_hope_comment entry-kengaku_hope_comment__02"
+                >
+                  お熱で呼び出されるって聞いたけど、
+                  <br />基準とかあるのかな
+                </p>
+                <div
+                  class="entry-kengaku_hope_img-wrap entry-kengaku_hope_img-wrap__02"
+                >
+                  <img
+                    src="/img/kengaku-man.png"
+                    alt=""
+                    class="entry-kengaku_hope_img"
+                    width="372"
+                    height="542"
+                    decoding="async"
+                  />
+                </div>
+              </li>
+              <!-- /.entry-kengaku_hope_item -->
+            </ul>
+            <!-- /.entry-kengaku_hope_list -->
+
+            <p class="entry-kengaku_hope_desc">
+              その他、
+              <br />・保護者会の活動について
+              <br />・特別な配慮が必要な場合はどうしたらいいか
+              <br />など、お気軽にお尋ねください！
+            </p>
+          </div>
+          <!-- /.l_container -->
+        </div>
+        <!-- /.l_contents -->
+      </section>
+      <!-- /.l_section entry-kengaku -->
+    </main>
+
+    <div class="m_cta entry_cta">
+      <div class="l_contents">
+        <div class="l_container-sm m_cta-wrap">
+          <p class="entry_cta_contact-message">
+            見学のお申込み・質問は
+            <br />下記までお電話ください。
+          </p>
+          <div class="l_section_body m_cta_body entry_cta_body">
+            <div
+              class="m_cta_texts m_cta_texts__narsary entry-cta_texts__narsary"
+            >
+              <h3 class="m_cta_sub-ttl">園へのご連絡</h3>
+              <p class="m_cta_desc">ご質問・見学について</p>
+              <p class="m_cta_tel">
+                <span class="m_cta_call-icon"></span>
+                000-000-0000
+              </p>
+              <p class="m_cta_reception-time">受付時間：月～土　9:00~19:00</p>
+            </div>
+            <!-- /.m_cta_texts m_cta_texts__narsary -->
+          </div>
+          <!-- /.l_container-sm -->
+        </div>
+        <!-- /.l_section_body m_cta_body -->
+      </div>
+      <!-- /.l_contents -->
+    </div>
+    <!-- /.m_cta -->
+
+    <div class="m_access">
+      <div class="l_contents m_access_wrap">
+        <div class="m_section_ttl-wrap m_access_ttl-wrap">
+          <h2 class="m_section_ttl m_access_ttl">アクセス</h2>
+        </div>
+        <div class="m_access_map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d68887.47802414565!2d136.1435120281809!3d35.289633891903094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1702048553869!5m2!1sja!2sjp?wmode=transparent"
+            width="800"
+            height="600"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <!-- /.m_access_map-wrap -->
+        <div class="m_access_logo-wrap">
+          <img src="img/logo-lg.png" alt="" class="m_access_logo" />
+        </div>
+        <div class="m_access_desc">
+          <p class="m_access_address">
+            住所：〒525-0000　滋賀県くさつ市くさつ7丁目○-○○
+          </p>
+          <p class="m_access_route">経路：JRくさつ駅より徒歩15分</p>
+          <p class="m_access_route">
+            &emsp;&emsp;&emsp;バス停「くさつ7丁目」より徒歩5分
+          </p>
+          <p class="m_access_car">駐輪場：20台駐輪可能</p>
+          <p class="m_access_bicycle">駐輪場：20台駐輪可能</p>
+        </div>
+        <!-- /.m_access_adress -->
+      </div>
+      <!-- /.l_contents -->
+    </div>
+    <!-- /.m_access -->
+
+    <footer class="l_footer">
+      <p class="page-top" id="page-top">
+        <a href="#" class="page-top_link SwayMove">Page Top</a>
+      </p>
+
+      <div class="l_footer-inner">
+        <div class="l_footer-navigation">
+          <div class="l_footer-logo">
+            <a href="" class="l_footer-logo_link">
+              <img
+                src="img/logo-sm.png"
+                alt="ロゴ"
+                class="l_footer-logo_img"
+                width="268"
+                height="160"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <!-- /.l_footer-logo -->
+          <nav class="l_footer-nav">
+            <ul class="l_footer-nav_list">
+              <li class="l_footer-nav_item">
+                <a href="index.html" class="l_footer-nav_link">トップページ</a>
+              </li>
+              <li class="l_footer-nav_item">
+                <a href="about.html" class="l_footer-nav_link">園について</a>
+              </li>
+              <li class="l_footer-nav_item">
+                <a href="hoiku.html" class="l_footer-nav_link">園での生活</a>
+              </li>
+              <li class="l_footer-nav_item">
+                <a href="entry.html" class="l_footer-nav_link">入園案内</a>
+              </li>
+              <li class="l_footer-nav_item">
+                <a href="entry.html#kengaku" class="l_footer-nav_link"
+                  >見学について</a
+                >
+              </li>
+              <li class="l_footer-nav_item">
+                <a href="faq.html" class="l_footer-nav_link">よくある質問</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.l_footer-nav -->
+          <button class="l_footer_cta-btn_wrap">
+            <a href="tel:000-000-0000" class="l_footer_cta-btn">
+              <img
+                src="img/icons/tel.svg"
+                alt=""
+                class="l_footer_cta-btn_icon"
+                width="36"
+                height="36"
+              />
+              <span class="l_footer_cta-text">お問合せ</span>
+            </a>
+          </button>
+          <!-- /.l_footer_cta-btn_wrap -->
+        </div>
+        <!-- /.l_footer-navigation -->
+        <div class="l_footer_sns-icons">
+          <div class="twitter-icon_wrap">
+            <a href="" class="twitter-icon_link">
+              <img
+                src="img/icons/🦆 icon _twitter_.svg"
+                alt=""
+                class="twitter_icon"
+                width="26"
+                height="26"
+              />
+            </a>
+          </div>
+          <div class="instagram-icon_wrap">
+            <a href="" class="instagram-icon_link">
+              <img
+                src="img/icons/🦆 icon _instagram_.svg"
+                alt=""
+                class="instagram_icon"
+                width="26"
+                height="26"
+              />
+            </a>
+          </div>
+          <div class="email-icon_wrap">
+            <a href="" class="email-icon_link">
+              <img
+                src="img/icons/🦆 icon _mail_.svg"
+                alt=""
+                class="email_icon"
+                width="36"
+                height="25"
+              />
+            </a>
+          </div>
+        </div>
+        <small class="l_footer_copyright"
+          >&copy;2023 KusatsuNakayoshi. NurserySchool</small
+        >
+      </div>
+      <!-- /.l_footer-inner -->
+    </footer>
+
+    <div class="m_hamburger-wrap">
+      <div class="m_hamburger" id="js-hamburger">
+        <span class="m_hamburger-bar"></span>
+        <span class="m_hamburger-bar"></span>
+        <p class="m_hamburger-bar__text"></p>
+      </div>
+      <img src="/img/icons/hamburger-drop.svg" alt="" class="hamburger-bg" />
+    </div>
+  </body>
+</html>

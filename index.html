@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>架空:くさつなかよし園</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body id="js-body">
+    <div id="loadingLogo" class="loading-anime-wrap">
+      <img class="loading-anime-img" src="img/sui-bird02.png" />
+      <div class="loading-anime-text">くさつなかよし園</div>
+    </div>
+
+    <header class="l_header">
+      <h1 class="l_header-logo">
+        <a href="" class="l_header-logo_link">
+          <img
+            src="img/logo-sm.png"
+            alt="ロゴ"
+            class="l_header-logo_img"
+            width="268"
+            height="160"
+            decoding="async"
+          />
+        </a>
+      </h1>
+      <!-- /.l_header-logo -->
+
+      <nav class="l_header-nav" id="js-nav">
+        <div class="l_header-nav_bg"></div>
+        <ul class="l_header-nav_list">
+          <li class="l_header-nav_item">
+            <a href="index.html" class="l_header-nav_link">トップページ</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="about.html" class="l_header-nav_link">園について</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="hoiku.html" class="l_header-nav_link">園での生活</a>
+          </li>
+          <li class="l_header-logo__pc">
+            <a href="" class="l_header-logo_link">
+              <img
+                src="img/logo-lg.png"
+                alt="ロゴ"
+                class="l_header-logo_img"
+                width="366"
+                height="118"
+                decoding="async"
+              />
+            </a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="entry.html" class="l_header-nav_link">入園案内</a>
+          </li>
+          <li class="l_header-nav_item" entry-kengaku-link>
+            <a href="entry.html#kengaku" class="l_header-nav_link"
+              >見学について</a
+            >
+          </li>
+          <li class="l_header-nav_item">
+            <a href="faq.html" class="l_header-nav_link">よくある質問</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.l_header-nav -->
+
+      <button class="l_header_cta-btn_wrap l_header_cta-btn_wrap__sp">
+        <a href="tel:000-000-0000" class="l_header_cta-btn" id="tel-btn">
+          <img
+            src="img/icons/tel.svg"
+            alt=""
+            class="l_header_cta-btn_icon"
+            width="36"
+            height="36"
+          />
+          <span class="l_header_cta-text">お問合せ</span>
+        </a>
+      </button>
+      <!-- /.l_header_cta-btn_wrap -->
+      <button class="l_header_cta-btn_wrap l_header_cta-btn_wrap__pc">
+        <a href="#cta" class="l_header_cta-btn" id="tel-btn">
+          <img
+            src="img/icons/tel.svg"
+            alt=""
+            class="l_header_cta-btn_icon"
+            width="36"
+            height="36"
+          />
+          <span class="l_header_cta-text">お問合せ</span>
+        </a>
+      </button>
+      <!-- /.l_header_cta-btn_wrap -->
+    </header>
+    <!-- /.l_header -->
+
+    <div class="l_main">
+      <div class="top-kv">
+        <div class="swiper_area">
+          <div class="swiper top-kv-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-slide">
+                  <img
+                    src="img/top-kv01.jpg"
+                    alt=""
+                    width="1920"
+                    height="1279"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="img/top-kv02.jpg"
+                  class="top-kv_img"
+                  width="1920"
+                  height="1279"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="img/time-schedule.jpg"
+                  alt=""
+                  width="1920"
+                  height="1279"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.swiper_area -->
+        <div class="top-kv_contents l_container-lg">
+          <p class="top-kv_copy">
+            ここは、
+            <br />子どもたちの「できた！」 <br />を花咲かせる場所。
+          </p>
+
+          <div class="kengaku-icon"></div>
+        </div>
+        <!-- /.top-kv_contents l_container-sm -->
+      </div>
+      <!-- /.top-kv -->
+
+      <section class="l_section top-about">
+        <div class="l_contents">
+          <div class="m_section_ttl-wrap top-about_ttl-wrap">
+            <h2 class="m_section_ttl top-about_ttl">園について</h2>
+          </div>
+          <div class="l_container-lg top-about_container">
+            <div class="l_section_body top-about_body js-scroll-trigger">
+              <div class="m_img_wrap top-about_img-wrap">
+                <img
+                  src="img/facility01.jpg"
+                  alt="施設の写真"
+                  class="m_img top-about_img"
+                  width="1920"
+                  height="1280"
+                />
+              </div>
+              <div class="m_contents top-about_contents">
+                <p class="m_contents_text top-about_text">
+                  当園の概要ページです。「五育」の考え方に基づいて、英語教育や運動遊び、異年齢保育や畑での野菜作り、放課後のお稽古など、多彩なプログラムでこどもたちの成長をサポートしています。
+                </p>
+                <button class="m_btn-wrapper">
+                  <a href="about.html" class="m_btn">詳しくはこちら</a>
+                </button>
+              </div>
+            </div>
+            <!-- /.top-about_body -->
+          </div>
+          <!-- /.l_container -->
+        </div>
+        <!-- /.l_contents -->
+      </section>
+
+      <section class="l_section top-hoiku">
+        <div class="l_contents">
+          <div class="m_section_ttl-wrap top-hoiku_ttl">
+            <h2 class="m_section_ttl top-hoiku_ttl">園での生活</h2>
+          </div>
+          <div class="l_container-lg">
+            <div class="l_section_body top-hoiku_body">
+              <ul class="m_post_list top-hoiku_list">
+                <li
+                  class="m_post_item top-hoiku_item top-hoiku_item01 js-scroll-trigger"
+                >
+                  <div class="m_img-wrap top-hoiku_img-wrap">
+                    <img
+                      src="img/time-schedule.jpg"
+                      alt="1日の流れ"
+                      class="m_img top-hoiku_img"
+                      width="1920"
+                      height="1280"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="m_post_contents top-hoiku_contents">
+                    <div class="m_post_texts top-hoiku_contents-texts">
+                      <h3 class="m_post_ttl top-hoiku_contents-ttl">
+                        1日の流れ
+                      </h3>
+                      <p class="m_post_desc top-hoiku_desc">
+                        よく遊び、よく食べて、よく寝る、園で過ごす時間はあっという間。毎日こんなことをして、生活リズムを整えています。
+                      </p>
+                    </div>
+                    <!-- /.m_post_texts top-hoiku_contents-texts -->
+                    <button class="m_btn-wrapper top-hoiku_btn-wrapper">
+                      <a href="hoiku.html#time-schedule" class="m_btn"
+                        >詳しくはこちら</a
+                      >
+                    </button>
+                  </div>
+                </li>
+                <!-- /.m_post_item top-hoiku_item -->
+                <li class="m_post_item top-hoiku_item js-scroll-trigger">
+                  <div class="m_img-wrap top-hoiku_img-wrap">
+                    <img
+                      src="img/event.jpg"
+                      alt="イベント"
+                      class="m_img top-hoiku_img"
+                      width="1920"
+                      height="1280"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="m_post_contents top-hoiku_contents">
+                    <div class="m_post_texts top-hoiku_contents-texts">
+                      <h3 class="m_post_ttl top-hoiku_contents-ttl">
+                        イベント
+                      </h3>
+                      <p class="m_post_desc top-hoiku_desc">
+                        子どもたちがぐっと成長できるイベント。年間を通して様々な行事をしていますので、ぜひご覧ください。保護者会の年間行事も紹介しています。
+                      </p>
+                    </div>
+                    <!-- /.m_post_texts top-hoiku_contents-texts -->
+                    <button class="m_btn-wrapper top-hoiku_btn-wrapper">
+                      <a href="hoiku.html#event" class="m_btn"
+                        >詳しくはこちら</a
+                      >
+                    </button>
+                  </div>
+                </li>
+                <!-- /.m_post_item top-hoiku_item -->
+              </ul>
+              <!-- /.m_post_list top-hoiku_list -->
+            </div>
+            <!-- /.l_section_body top-hoiku_body -->
+          </div>
+          <!-- /.l_container-lg -->
+        </div>
+        <!-- /.l_contents -->
+      </section>
+      <!-- /.l_section top-hoiku -->
+
+      <section class="l_section top-entry">
+        <div class="l_contents">
+          <div class="m_section_ttl-wrap top-entry_ttl">
+            <h2 class="m_section_ttl top-entry_ttl">入園案内</h2>
+          </div>
+          <div class="l_section_body top-entry_body">
+            <div class="l_container-lg">
+              <ul class="m_cercle_list top-entry_list js-scroll-trigger">
+                <li class="m_cercle_item top-entry_item">
+                  <a
+                    href="entry.html#flow"
+                    class="m_cercle_link top-entry_link"
+                  >
+                    <div class="m_cercle-icon_wrap">
+                      <img
+                        src="img/icons/entry-flow.svg"
+                        alt="入園までの流れ"
+                        class="m_cercle_icon-img"
+                        width="47"
+                        height="64"
+                      />
+                    </div>
+                    <div class="m_cercle_texts">
+                      <h3 class="m_cercle_ttl top-entry_cercle_ttl">
+                        入園までの流れ
+                      </h3>
+                      <span class="m_small-arrow"></span>
+                    </div>
+                  </a>
+                </li>
+                <!-- /.m_cercle_item top-entry_item-->
+                <li class="m_cercle_item top-entry_item">
+                  <a
+                    href="about.html#rules"
+                    class="m_cercle_link top-entry_link"
+                  >
+                    <div class="m_cercle-icon_wrap">
+                      <img
+                        src="img/icons/entry-price.svg"
+                        alt="保育時間・保育料金等"
+                        class="m_cercle_icon-img"
+                        width="62"
+                        height="65"
+                      />
+                    </div>
+                    <div class="m_cercle_texts">
+                      <h3 class="m_cercle_ttl top-entry_cercle_ttl">
+                        保育時間・
+                        <br />保育料金等
+                      </h3>
+                      <span class="m_small-arrow"></span>
+                    </div>
+                  </a>
+                </li>
+                <!-- /.m_cercle_item top-entry_item-->
+                <li class="m_cercle_item top-entry_item">
+                  <a
+                    href="entry.html#kengaku"
+                    class="m_cercle_link top-entry_link"
+                  >
+                    <div class="m_cercle-icon_wrap">
+                      <img
+                        src="img/icons/entry-visit.svg"
+                        alt="見学について"
+                        class="m_cercle_icon-img"
+                        width="64"
+                        height="64"
+                      />
+                    </div>
+                    <div class="m_cercle_texts">
+                      <h3 class="m_cercle_ttl top-entry_cercle_ttl">
+                        見学について
+                      </h3>
+                      <span class="m_small-arrow"></span>
+                    </div>
+                  </a>
+                </li>
+                <!-- /.m_cercle_item top-entry_item-->
+                <li class="m_cercle_item top-entry_item">
+                  <a href="faq.html" class="m_cercle_link top-entry_link">
+                    <div class="m_cercle-icon_wrap">
+                      <img
+                        src="img/icons/entry-faq.svg"
+                        alt="よくある質問"
+                        class="m_cercle_icon-img"
+                        width="64"
+                        height="62"
+                      />
+                    </div>
+                    <div class="m_cercle_texts">
+                      <h3 class="m_cercle_ttl top-entry_cercle_ttl">
+                        よくある質問
+                      </h3>
+                      <span class="m_small-arrow"></span>
+                    </div>
+                  </a>
+                </li>
+                <!-- /.m_cercle_item top-entry_item-->
+              </ul>
+              <!-- /.m_cercle_list top-entry_list-->
+            </div>
+            <!-- /.l_container-sm -->
+          </div>
+          <!-- /.l_section_body top-entry_body -->
+        </div>
+        <!-- /.l_contents -->
+      </section>
+      <!-- /.l_section top-entry -->
+    </div>
+    <!-- /.l_main -->
+
+    <div class="m_cta" id="cta">
+      <div class="l_contents">
+        <div class="m_section_ttl-wrap m_cta_ttl-wrap">
+          <h2 class="m_section_ttl m_cta_ttl">お問い合わせ</h2>
+        </div>
+        <div class="l_container-sm m_cta-wrap">
+          <div class="l_section_body m_cta_body">
+            <div class="m_cta_texts m_cta_texts__narsary">
+              <h3 class="m_cta_sub-ttl">園へのご連絡</h3>
+              <p class="m_cta_desc">ご質問・見学について</p>
+              <p class="m_cta_tel">
+                <span class="m_cta_call-icon"></span>
+                000-000-0000
+              </p>
+              <p class="m_cta_reception-time">受付時間：月～土　9:00~19:00</p>
+            </div>
+            <!-- /.m_cta_texts m_cta_texts__narsary -->
+            <div class="m_cta_border"></div>
+            <div class="m_cta_texts city_text">
+              <h3 class="m_cta_sub-ttl m_cta_sub-ttl__city">市へのご連絡</h3>
+              <p class="m_cta_desc">入園のお手続き・制度に関して</p>
+              <p class="m_cta_tel">
+                <span class="m_cta_call-icon"></span>
+                000-000-0000
+              </p>
+              <p class="m_cta_reception-time">受付時間：月～土　9:00~17:00</p>
+            </div>
+            <!-- /.m_cta_texts city_texts -->
+          </div>
+          <!-- /.l_container-sm -->
+        </div>
+        <!-- /.l_section_body m_cta_body -->
+      </div>
+      <!-- /.l_contents -->
+    </div>
+    <!-- /.m_cta -->
+
+    <div class="m_access">
+      <div class="l_contents m_access_wrap">
+        <div class="m_section_ttl-wrap m_access_ttl-wrap">
+          <h2 class="m_section_ttl m_access_ttl">アクセス</h2>
+        </div>
+        <div class="m_access_map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d68887.47802414565!2d136.1435120281809!3d35.289633891903094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1702048553869!5m2!1sja!2sjp?wmode=transparent"
+            width="800"
+            height="600"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <!-- /.m_access_map-wrap -->
+        <div class="m_access_logo-wrap">
+          <img src="img/logo-lg.png" alt="" class="m_access_logo" />
+        </div>
+        <div class="m_access_desc">
+          <p class="m_access_address">
+            住所：〒525-0000　滋賀県くさつ市くさつ7丁目○-○○
+          </p>
+          <p class="m_access_route">経路：JRくさつ駅より徒歩15分</p>
+          <p class="m_access_route">
+            &emsp;&emsp;&emsp;バス停「くさつ7丁目」より徒歩5分
+          </p>
+          <p class="m_access_car">駐輪場：20台駐輪可能</p>
+          <p class="m_access_bicycle">駐輪場：20台駐輪可能</p>
+        </div>
+        <!-- /.m_access_adress -->
+      </div>
+      <!-- /.l_contents -->
+    </div>
+    <!-- /.m_access -->
+
+    <footer class="l_footer">
+      <div class="l_footer-inner">
+        <p class="page-top">
+          <a href="#" class="page-top_link SwayMove">Page Top</a>
+        </p>
+        <div class="l_footer-navigation">
+          <div class="l_footer-logo">
+            <a href="" class="l_footer-logo_link">
+              <img
+                src="img/logo-sm.png"
+                alt="ロゴ"
+                class="l_footer-logo_img"
+                width="268"
+                height="160"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <!-- /.l_footer-logo -->
+          <nav class="l_footer-nav">
+            <ul class="l_footer-nav_list">
+              <li class="l_footer-nav_item">
+                <a href="index.html" class="l_footer-nav_link">トップページ</a>
+              </li>
+              <li class="l_footer-nav_item">
+                <a href="about.html" class="l_footer-nav_link">園について</a>
+              </li>
+              <li class="l_footer-nav_item">
+                <a href="hoiku.html" class="l_footer-nav_link">園での生活</a>
+              </li>
+              <li class="l_footer-nav_item">
+                <a href="entry.html" class="l_footer-nav_link">入園案内</a>
+              </li>
+              <li class="l_footer-nav_item">
+                <a href="entry.html#kengaku" class="l_footer-nav_link"
+                  >見学について</a
+                >
+              </li>
+              <li class="l_footer-nav_item">
+                <a href="faq.html" class="l_footer-nav_link">よくある質問</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.l_footer-nav -->
+          <button class="l_footer_cta-btn_wrap">
+            <a href="tel:000-000-0000" class="l_footer_cta-btn">
+              <img
+                src="img/icons/tel.svg"
+                alt=""
+                class="l_footer_cta-btn_icon"
+                width="36"
+                height="36"
+              />
+              <span class="l_footer_cta-text">お問合せ</span>
+            </a>
+          </button>
+          <!-- /.l_footer_cta-btn_wrap -->
+        </div>
+        <!-- /.l_footer-navigation -->
+        <div class="l_footer_sns-icons">
+          <div class="twitter-icon_wrap">
+            <a href="" class="twitter-icon_link">
+              <img
+                src="img/icons/🦆 icon _twitter_.svg"
+                alt=""
+                class="twitter_icon"
+                width="26"
+                height="26"
+              />
+            </a>
+          </div>
+          <div class="instagram-icon_wrap">
+            <a href="" class="instagram-icon_link">
+              <img
+                src="img/icons/🦆 icon _instagram_.svg"
+                alt=""
+                class="instagram_icon"
+                width="26"
+                height="26"
+              />
+            </a>
+          </div>
+          <div class="email-icon_wrap">
+            <a href="" class="email-icon_link">
+              <img
+                src="img/icons/🦆 icon _mail_.svg"
+                alt=""
+                class="email_icon"
+                width="36"
+                height="25"
+              />
+            </a>
+          </div>
+        </div>
+        <small class="l_footer_copyright"
+          >&copy;2023 KusatsuNakayoshi. NurserySchool</small
+        >
+      </div>
+      <!-- /.l_footer-inner -->
+    </footer>
+
+    <div class="m_hamburger-wrap">
+      <div class="m_hamburger" id="js-hamburger">
+        <span class="m_hamburger-bar"></span>
+        <span class="m_hamburger-bar"></span>
+        <p class="m_hamburger-bar__text"></p>
+      </div>
+      <img src="/img/icons/hamburger-drop.svg" alt="" class="hamburger-bg" />
+    </div>
+  </body>
+</html>

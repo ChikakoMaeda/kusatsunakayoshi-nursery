@@ -1,18 +1,3 @@
-// ハンバーガーメニュー
-// const nav = document.querySelector("#js-nav");
-// const pageLink = document.querySelectorAll(".entry-kengaku-link");
-// const ham = document.querySelector("#js-hamburger");
-// console.log(nav);
-ham.addEventListener("click", function () {
-  // console.log('ok');
-  ham.classList.toggle("is-active");
-  nav.classList.toggle("is-active");
-  body.classList.toggle("is_hidden");
-  pageLink.addEventListener("click", function () {
-    nav.classList.remove("is-active");
-  });
-});
-
 const scrollAreasSub = document.querySelectorAll(".js-scroll-trigger");
 
 scrollAreasSub.forEach(function (scrollAreas) {
@@ -98,4 +83,19 @@ $(".page-top").click(function () {
     1000
   ); //ページトップスクロールの速さ。数字が大きいほど遅くなる
   return false; //リンク自体の無効化
+});
+
+// ハンバーガーメニュー
+// const nav = document.querySelector("#js-nav");
+// const pageLink = document.querySelectorAll(".entry-kengaku-link");
+// const ham = document.querySelector("#js-hamburger");
+// console.log(nav);
+ham.addEventListener("click", function () {
+  // console.log('ok');
+  ham.classList.toggle("is-active");
+  nav.classList.toggle("is-active");
+  body.classList.toggle("is_hidden");
+  pageLink.addEventListener("click", function () {
+    nav.classList.remove("is-active");
+  });
 });

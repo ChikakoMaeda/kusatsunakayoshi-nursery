@@ -1,7 +1,7 @@
 // ハンバーガーメニュー
-const nav = document.querySelector("#js-nav");
-const pageLink = document.querySelectorAll(".entry-kengaku-link");
-const ham = document.querySelector("#js-hamburger");
+// const nav = document.querySelector("#js-nav");
+// const pageLink = document.querySelectorAll(".entry-kengaku-link");
+// const ham = document.querySelector("#js-hamburger");
 // console.log(nav);
 ham.addEventListener("click", function () {
   // console.log('ok');

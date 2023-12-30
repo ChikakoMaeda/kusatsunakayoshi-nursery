@@ -29,7 +29,7 @@ KengakuItem.forEach(function (KengakuItem, index) {
     scrollTrigger: {
       trigger: ".js-entry-kengaku",
       start: "top center",
-      markers: true,
+      // markers: true,
     },
   });
 });

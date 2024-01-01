@@ -97,12 +97,10 @@ const slider02 = new Swiper(".about-feature_swiper", {
 });
 
 // ハンバーガーメニュー
-const nav = document.querySelector("#js-nav");
-const pageLink = document.querySelectorAll(".entry-kengaku-link");
-const ham = document.querySelector("#js-hamburger");
-// console.log(nav);
+let nav = document.querySelector("#js-nav");
+let pageLink = document.querySelector("#entry-kengaku-link");
+let ham = document.querySelector("#js-hamburger");
 ham.addEventListener("click", function () {
-  // console.log('ok');
   ham.classList.toggle("is-active");
   nav.classList.toggle("is-active");
   body.classList.toggle("is_hidden");
@@ -127,7 +125,6 @@ ham.addEventListener("click", function () {
 // let newHref = oldHref.replace("tel:000-000-0000", "#m_cta");
 // //置き換えた値をa要素のhref属性に設定する
 // telBtn.setAttribute("href", newHref);
-
 
 //アコーディオンをクリックした時の動作
 $(".question_ttl").on("click", function () {
@@ -239,3 +236,4 @@ $(".page-top").click(function () {
   ); //ページトップスクロールの速さ。数字が大きいほど遅くなる
   return false; //リンク自体の無効化
 });
+

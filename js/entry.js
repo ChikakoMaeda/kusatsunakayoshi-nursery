@@ -86,9 +86,9 @@ $(".page-top").click(function () {
 });
 
 // ハンバーガーメニュー
-// const nav = document.querySelector("#js-nav");
-// const pageLink = document.querySelectorAll(".entry-kengaku-link");
-// const ham = document.querySelector("#js-hamburger");
+let nav = document.querySelector("#js-nav");
+let pageLink = document.getElementById("entry-kengaku-link");
+let ham = document.querySelector("#js-hamburger");
 // console.log(nav);
 ham.addEventListener("click", function () {
   // console.log('ok');

@@ -8,14 +8,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://chikakomaeda.github.io/sample-nursery.github.io/reset.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://chikakomaeda.github.io/sample-nursery.github.io/style.css"
-    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,11 +27,8 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://chikakomaeda.github.io/sample-nursery.github.io/js/main.js"
-      defer
-    ></script>
-    <script src="https://chikakomaeda.github.io/sample-nursery.github.io/js/entry.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/entry.js" defer></script>
   </head>
   <body id="js-body">
     <header class="l_header">
@@ -55,7 +46,7 @@
       </h1>
       <!-- /.l_header-logo -->
 
-      <nav class="l_header-nav" id="js-nav">
+      <nav class="l_header-nav" aria-hidden="true" id="js-nav">
         <div class="l_header-nav_bg"></div>
         <ul class="l_header-nav_list">
           <li class="l_header-nav_item">
@@ -82,8 +73,11 @@
           <li class="l_header-nav_item">
             <a href="entry.html" class="l_header-nav_link">入園案内</a>
           </li>
-          <li class="l_header-nav_item entry-kengaku-link">
-            <a href="entry.html#kengaku" class="l_header-nav_link"
+          <li class="l_header-nav_item">
+            <a
+              href="entry.html#kengaku"
+              class="l_header-nav_link"
+              id="entry-kengaku-link"
               >見学について</a
             >
           </li>
@@ -151,7 +145,7 @@
                 </div>
                 <div class="entry-flow_city-img_wrap">
                   <img
-                    src="https://chikakomaeda.github.io/sample-nursery.github.io/img/city-flow.svg"
+                    src="/img/city-flow.svg"
                     alt="市の認定区分フローチャート"
                     class="entry-flow_city-img"
                   />
@@ -286,7 +280,7 @@
                   class="m_img-wrap entry-kengaku_img-wrap entry-kengaku_img-wrap__01"
                 >
                   <img
-                    src="https://chikakomaeda.github.io/sample-nursery.github.io/img/facility01.jpg"
+                    src="img/facility01.jpg"
                     alt="施設の写真"
                     class="m_img entry-kengaku_img"
                     width="1920"
@@ -310,7 +304,7 @@
                   class="m_img-wrap entry-kengaku_img-wrap entry-kengaku_img-wrap__02"
                 >
                   <img
-                    src="https://chikakomaeda.github.io/sample-nursery.github.io/img/top-kv02.jpg"
+                    src="img/top-kv02.jpg"
                     alt="解決した風の写真"
                     class="m_img entry-kengaku_img"
                     width="1920"
@@ -343,7 +337,7 @@
                   class="entry-kengaku_hope_img-wrap entry-kengaku_hope_img-wrap__01"
                 >
                   <img
-                    src="https://chikakomaeda.github.io/sample-nursery.github.io/img/kengaku-ledy.png"
+                    src="/img/kengaku-ledy.png"
                     alt=""
                     class="entry-kengaku_hope_img"
                     width="342"
@@ -364,7 +358,7 @@
                   class="entry-kengaku_hope_img-wrap entry-kengaku_hope_img-wrap__02"
                 >
                   <img
-                    src="https://chikakomaeda.github.io/sample-nursery.github.io/img/kengaku-man.png"
+                    src="/img/kengaku-man.png"
                     alt=""
                     class="entry-kengaku_hope_img"
                     width="372"
@@ -459,7 +453,7 @@
 
     <footer class="l_footer">
       <p class="page-top" id="page-top">
-        <a href="#" class="page-top_link SwayMove">Page Top</a>
+        <a href="" class="page-top_link SwayMove">Page Top</a>
       </p>
 
       <div class="l_footer-inner">
@@ -560,16 +554,19 @@
     </footer>
 
     <div class="m_hamburger-wrap">
-      <div class="m_hamburger" id="js-hamburger">
+      <button
+        class="m_hamburger"
+        id="js-hamburger"
+        type="button"
+        aria-label="MENU"
+        aria-controls="nav"
+        aria-expanded="false"
+      >
         <span class="m_hamburger-bar"></span>
         <span class="m_hamburger-bar"></span>
-        <p class="m_hamburger-bar__text"></p>
-      </div>
-      <img
-        src="https://chikakomaeda.github.io/sample-nursery.github.io/img/icons/hamburger-drop.svg"
-        alt=""
-        class="hamburger-bg"
-      />
+        <span class="m_hamburger-bar__text"></span>
+      </button>
+      <img src="/img/icons/hamburger-drop.svg" alt="" class="hamburger-bg" />
     </div>
   </body>
 </html>

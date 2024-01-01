@@ -352,6 +352,7 @@ td {
 .l_header-logo_img {
   height: 80px;
   width: auto;
+  object-fit: cover;
 }
 
 .l_header-nav {

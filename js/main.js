@@ -5,7 +5,7 @@ if (!sessionStorage.getItem(keyName)) {
   sessionStorage.setItem(keyName, keyValue);
   // 初回閲覧時
   window.onload = function () {
-    var popup = document.getElementById("firstTimeModal");
+    const popup = document.getElementById("firstTimeModal");
     if (!popup) return;
     popup.classList.add("is-show"); // モーダルにis-showのclassを付与
   };
@@ -40,8 +40,6 @@ function openingAnime() {
     });
 }
 
-// openingAnime();
-
 function webStorage() {
   if (sessionStorage.getItem("access")) {
     body.classList.add("is-loaded");
@@ -52,6 +50,7 @@ function webStorage() {
 }
 webStorage();
 
+// kvスライドショー
 function kvSwiper() {
   setTimeout(function () {
     const slider01 = new Swiper(".top-kv-swiper", {
@@ -70,36 +69,10 @@ function kvSwiper() {
 
 kvSwiper();
 
-const slider02 = new Swiper(".about-feature_swiper", {
-  // ページネーションが必要なら追加
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  loop: true,
-  autoplay: true,
-  speed: 3000,
-
-  slidesPerView: 1,
-  spaceBetween: 32,
-  breakpoints: {
-    // 768px以上の場合
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 32,
-    },
-    // 768px以上の場合
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 32,
-    },
-  },
-});
-
 // ハンバーガーメニュー
-let nav = document.querySelector("#js-nav");
-let pageLink = document.querySelector("#entry-kengaku-link");
-let ham = document.querySelector("#js-hamburger");
+const nav = document.querySelector("#js-nav");
+const pageLink = document.querySelector("#entry-kengaku-link");
+const ham = document.querySelector("#js-hamburger");
 ham.addEventListener("click", function () {
   ham.classList.toggle("is-active");
   nav.classList.toggle("is-active");
@@ -109,48 +82,34 @@ ham.addEventListener("click", function () {
   });
 });
 
-// let windowWidth = $(window).width();
-// let windowSm = 640;
-// if (windowWidth <= windowSm) {
-//   //横幅640px以下（スマホ）に適用させるJavaScriptを記述
+// ヘッダーお問い合わせボタンの切り替え
+document.addEventListener("DOMContentLoaded", function () {
+  const windowWidth = window.innerWidth;
 
-// } else {
-//   //横幅640px以上（PC、タブレット）に適用させるJavaScriptを記述
-// }
-// //a要素を取得する
-// let telBtn = document.querySelector("#tel-btn");
-// //a要素のhref属性の値を取得する
-// let oldHref = telBtn.getAttribute("href");
-// //replaceでhref属性の一部（jquery）を新しい値（javascript）に置き換える
-// let newHref = oldHref.replace("tel:000-000-0000", "#m_cta");
-// //置き換えた値をa要素のhref属性に設定する
-// telBtn.setAttribute("href", newHref);
+  window.addEventListener("resize", function () {
+    const windowWidth = window.innerWidth;
 
-//アコーディオンをクリックした時の動作
-$(".question_ttl").on("click", function () {
-  //タイトル要素をクリックしたら
-  var findElm = $(this).next(".answer_box"); //直後のアコーディオンを行うエリアを取得し
-  $(findElm).slideToggle(); //アコーディオンの上下動作
-
-  if ($(this).hasClass("close")) {
-    //タイトル要素にクラス名closeがあれば
-    $(this).removeClass("close"); //クラス名を除去し
-  } else {
-    //それ以外は
-    $(this).addClass("close"); //クラス名closeを付与
-  }
-});
-
-//ページが読み込まれた際にopenクラスをつけ、openがついていたら開く動作※不必要なら下記全て削除
-$(window).on("load", function () {
-  $(".accordion_list li:first-of-type section").addClass("open"); //accordion-areaのはじめのliにあるsectionにopenクラスを追加
-  $(".open").each(function (index, element) {
-    //openクラスを取得
-    var Title = $(element).children(".question_ttl"); //openクラスの子要素のtitleクラスを取得
-    $(Title).addClass("close"); //タイトルにクラス名closeを付与し
-    var Box = $(element).children(".answer_box"); //openクラスの子要素boxクラスを取得
-    $(Box).slideDown(500); //アコーディオンを開く
+    if (windowWidth >= 640) {
+      document.getElementById("tel-btn").href = "index.html#cta";
+    } else {
+      document.getElementById("tel-btn").href = "tel:000-000-0000";
+    }
   });
+
+  if (windowWidth >= 640) {
+    document.getElementById("tel-btn").href = "index.html#cta";
+  }
+
+  // ページ内リンクがクリックされたときの処理
+  document
+    .getElementById("tel-btn")
+    .addEventListener("click", function (event) {
+      // ページ内リンクなのでデフォルトの動作をキャンセル
+      event.preventDefault();
+
+      // 直接指定のURLに遷移
+      window.location.href = this.getAttribute("href");
+    });
 });
 
 // ふわっと登場
@@ -236,4 +195,3 @@ $(".page-top").click(function () {
   ); //ページトップスクロールの速さ。数字が大きいほど遅くなる
   return false; //リンク自体の無効化
 });
-

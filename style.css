@@ -185,8 +185,7 @@ td {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/hiyoko.png)
-      no-repeat center/ cover;
+    background: url(../img/hiyoko.png) no-repeat center/ cover;
     border-radius: 5px;
     width: 100px;
     height: 100px;
@@ -201,8 +200,7 @@ td {
 }
 
 .page-top a:hover {
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/hiyoko.png)
-    no-repeat center / cover;
+  background: url(../img/hiyoko.png) no-repeat center / cover;
 }
 
 /*リンクを右下に固定*/
@@ -382,8 +380,7 @@ td {
 .l_header-nav_bg {
   width: 100%;
   height: 94px;
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-drops.png)
-    repeat-x;
+  background: url(../img/sui-drops.png) repeat-x;
   background-size: 50%;
 }
 
@@ -511,8 +508,7 @@ td {
 .l_footer-inner::after {
   content: "";
   position: absolute;
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-tree.png)
-    no-repeat center / cover;
+  background: url(../img/sui-tree.png) no-repeat center / cover;
   width: 200px;
   height: 237px;
   bottom: 90px;
@@ -903,7 +899,15 @@ td {
   .m_cercle_item {
     width: 130px;
   }
+}
 
+.about-safety_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
   .about-safety_item {
     width: 200px;
   }
@@ -993,8 +997,7 @@ td {
   position: absolute;
   top: 65%;
   left: -100px;
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-bird03.png)
-    no-repeat center / cover;
+  background: url(../img/sui-bird03.png) no-repeat center / cover;
   width: 75px;
   height: 75px;
 }
@@ -1033,8 +1036,7 @@ td {
   position: absolute;
   bottom: -10%;
   right: -30px;
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-pinks.png)
-    no-repeat;
+  background: url(../img/sui-pinks.png) no-repeat;
   background-size: contain;
   width: 113px;
   height: 113px;
@@ -1093,8 +1095,7 @@ td {
 .m_cta_call-icon::after {
   position: absolute;
   content: "";
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/icons/tel.svg)
-    no-repeat center center/cover;
+  background: url(../img/icons/tel.svg) no-repeat center center/cover;
   width: 36px;
   height: 36px;
   top: 50%;
@@ -1123,8 +1124,7 @@ td {
   top: -80%;
   left: -100px;
   transform: rotate(180deg);
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-yellowgreen.png)
-    no-repeat;
+  background: url(../img/sui-yellowgreen.png) no-repeat;
   background-size: contain;
   width: 140px;
   height: 140px;
@@ -1248,8 +1248,7 @@ td {
   left: -15px;
   width: 192px;
   height: 125px;
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/kengaku-icon.png)
-    no-repeat center / cover;
+  background: url(../img/kengaku-icon.png) no-repeat center / cover;
   z-index: var(--z-index-menu);
 }
 
@@ -1282,8 +1281,7 @@ td {
   top: 100%;
   left: 0;
   transform: translate(-50%, -50%);
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-yellowgreen.png)
-    no-repeat center / cover;
+  background: url(../img/sui-yellowgreen.png) no-repeat center / cover;
   width: 140px;
   height: 114px;
   z-index: var(--z-index-back);
@@ -1337,8 +1335,7 @@ td {
     content: "";
     top: 0;
     right: 0;
-    background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-drops_top-about_bg.svg)
-      no-repeat center / cover;
+    background: url(../img/sui-drops_top-about_bg.svg) no-repeat center / cover;
     width: 360px;
     height: 650px;
     z-index: var(--z-index-back);
@@ -1350,7 +1347,7 @@ td {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-drops_top-about_bg.svg) no-repeat center / contain;
+    background: url(../img/sui-drops_top-about_bg.svg) no-repeat center / contain;
     width: 1920px;
     height: 892px;
     z-index: var(--z-index-back);
@@ -1452,8 +1449,7 @@ td {
     position: absolute;
     top: 95%;
     left: 35%;
-    background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-music.png)
-      no-repeat;
+    background: url(../img/sui-music.png) no-repeat;
     background-size: contain;
     width: 247px;
     height: 226px;
@@ -1467,8 +1463,7 @@ td {
   top: -65%;
   right: -85px;
   transform: rotate(20deg);
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-yellowgreen.png)
-    no-repeat center / cover;
+  background: url(../img/sui-yellowgreen.png) no-repeat center / cover;
   width: 140px;
   height: 114px;
   z-index: var(--z-index-back);
@@ -1497,8 +1492,7 @@ td {
   position: absolute;
   top: 20px;
   left: -80px;
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-bird02.png)
-    no-repeat;
+  background: url(../img/sui-bird02.png) no-repeat;
   background-size: contain;
   width: 81px;
   height: 80px;
@@ -1554,8 +1548,7 @@ td {
   position: absolute;
   top: -170%;
   left: -60px;
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/rainbow.png)
-    no-repeat center / cover;
+  background: url(../img/rainbow.png) no-repeat center / cover;
   width: 210px;
   height: 140px;
   z-index: var(--z-index-back);
@@ -1582,8 +1575,7 @@ td {
       rgba(217, 217, 217, 0.5),
       rgba(217, 217, 217, 0.5)
     ),
-    url(https://chikakomaeda.github.io/sample-nursery.github.io/img/facility01.jpg)
-      no-repeat center/ cover;
+    url(../img/facility01.jpg) no-repeat center/ cover;
 }
 
 /* about-mission */
@@ -1592,8 +1584,7 @@ td {
   position: absolute;
   top: -80%;
   left: -100%;
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-yellowgreen.png)
-    no-repeat center / cover;
+  background: url(../img/sui-yellowgreen.png) no-repeat center / cover;
   width: 210px;
   height: 140px;
   z-index: var(--z-index-back);
@@ -1656,8 +1647,7 @@ td {
   top: -100%;
   left: 35%;
   transform: rotate(-35deg);
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-yellowgreen.png)
-    no-repeat center / cover;
+  background: url(../img/sui-yellowgreen.png) no-repeat center / cover;
   width: 210px;
   height: 140px;
   z-index: var(--z-index-back);
@@ -1706,23 +1696,23 @@ td {
 }
 
 .about-feature_contents__syoku::after {
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/icons/icon-syoku.svg);
+  background: url(../img/icons/icon-syoku.svg);
 }
 
 .about-feature_contents__chi::after {
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/icons/icon-chi.svg);
+  background: url(../img/icons/icon-chi.svg);
 }
 
 .about-feature_contents__toku::after {
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/icons/icon-toku.svg);
+  background: url(../img/icons/icon-toku.svg);
 }
 
 .about-feature_contents__sai::after {
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/icons/icon-sai.svg);
+  background: url(../img/icons/icon-sai.svg);
 }
 
 .about-feature_contents__tai::after {
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/icons/icon-tai.svg);
+  background: url(../img/icons/icon-tai.svg);
 }
 
 /* about-safety */
@@ -1732,8 +1722,7 @@ td {
   top: -80%;
   left: -40%;
   transform: rotate(120deg);
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-yellowgreen.png)
-    no-repeat center / cover;
+  background: url(../img/sui-yellowgreen.png) no-repeat center / cover;
   width: 210px;
   height: 140px;
   z-index: var(--z-index-back);
@@ -1762,8 +1751,7 @@ td {
   position: absolute;
   top: -50%;
   left: -10%;
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/rainbow.png)
-    no-repeat center / cover;
+  background: url(../img/rainbow.png) no-repeat center / cover;
   width: 210px;
   height: 140px;
   z-index: var(--z-index-back);
@@ -1813,8 +1801,8 @@ td {
     content: "";
     top: 15%;
     right: 0;
-    background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-drops_about-rules_bg.svg)
-      no-repeat center / cover;
+    background: url(../img/sui-drops_about-rules_bg.svg) no-repeat center /
+      cover;
     width: 360px;
     height: 760px;
     z-index: var(--z-index-back);
@@ -2031,8 +2019,7 @@ td {
   top: -100%;
   left: 40%;
   transform: rotate(-35deg);
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-yellowgreen.png)
-    no-repeat center / cover;
+  background: url(../img/sui-yellowgreen.png) no-repeat center / cover;
   width: 210px;
   height: 140px;
   z-index: var(--z-index-back);
@@ -2161,8 +2148,7 @@ td {
       rgba(217, 217, 217, 0.5),
       rgba(217, 217, 217, 0.5)
     ),
-    url(https://chikakomaeda.github.io/sample-nursery.github.io/img/time-schedule.jpg)
-      no-repeat center center/cover;
+    url(../img/time-schedule.jpg) no-repeat center center/cover;
 }
 
 .time-schedule {
@@ -2174,8 +2160,7 @@ td {
   position: absolute;
   top: 10%;
   left: -70%;
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-bird02.png)
-    no-repeat center / cover;
+  background: url(../img/sui-bird02.png) no-repeat center / cover;
   width: 80px;
   height: 80px;
   z-index: var(--z-index-back);
@@ -2195,8 +2180,7 @@ td {
   position: absolute;
   top: -60%;
   left: 70%;
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-pinks.png)
-    no-repeat center / cover;
+  background: url(../img/sui-pinks.png) no-repeat center / cover;
   width: 120px;
   height: 90px;
   z-index: var(--z-index-back);
@@ -2226,8 +2210,8 @@ td {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-drops_hoiku-schedule_bg.svg)
-      no-repeat center / contain;
+    background: url(../img/sui-drops_hoiku-schedule_bg.svg) no-repeat center /
+      contain;
     width: 1808px;
     height: 1920px;
     z-index: var(--z-index-back);
@@ -2273,8 +2257,7 @@ td {
   top: 30%;
   left: 40%;
   transform: translate(-50%, -50%);
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-yellowgreen.svg)
-    no-repeat center / cover;
+  background: url(../img/sui-yellowgreen.svg) no-repeat center / cover;
   z-index: var(--z-index-back);
 }
 
@@ -2318,8 +2301,7 @@ td {
   position: absolute;
   top: -80%;
   left: 60%;
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-music.png)
-    no-repeat center / cover;
+  background: url(../img/sui-music.png) no-repeat center / cover;
   width: 175px;
   height: 84px;
   z-index: var(--z-index-back);
@@ -2373,8 +2355,7 @@ td {
     position: absolute;
     top: 60%;
     left: -30%;
-    background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-ribon.png)
-      no-repeat center / cover;
+    background: url(../img/sui-ribon.png) no-repeat center / cover;
     width: 420px;
     height: 158px;
     z-index: var(--z-index-back);
@@ -2413,8 +2394,7 @@ td {
       rgba(217, 217, 217, 0.5),
       rgba(217, 217, 217, 0.5)
     ),
-    url(https://chikakomaeda.github.io/sample-nursery.github.io/img/facility02.jpg)
-      no-repeat center/ cover;
+    url(../img/facility02.jpg) no-repeat center/ cover;
 }
 
 .entry-flow_ttl::after {
@@ -2447,8 +2427,7 @@ td {
   position: absolute;
   top: -60%;
   left: 70%;
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-pinks.png)
-    no-repeat center / cover;
+  background: url(../img/sui-pinks.png) no-repeat center / cover;
   width: 120px;
   height: 90px;
   z-index: var(--z-index-back);
@@ -2521,8 +2500,7 @@ td {
 }
 
 .entry-flow_step-part:nth-child(odd) {
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/bg-sp.png)
-    center / 70%;
+  background: url(../img/bg-sp.png) center / 70%;
 }
 
 .entry-flow_step_heading {
@@ -2559,8 +2537,7 @@ td {
 .entry-flow_step_number::before {
   position: absolute;
   content: "";
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-yellowgreen.svg)
-    no-repeat center center/cover;
+  background: url(../img/sui-yellowgreen.svg) no-repeat center center/cover;
   width: 114px;
   height: 95px;
   top: 50%;
@@ -2654,8 +2631,7 @@ td {
 .entry-flow_caution_heading::after {
   display: block;
   content: "";
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/icons/caution.svg)
-    no-repeat center center/cover;
+  background: url(../img/icons/caution.svg) no-repeat center center/cover;
   width: 22px;
   height: 22px;
 }
@@ -2744,8 +2720,7 @@ td {
   position: absolute;
   top: -110%;
   left: -20%;
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/rainbow.png)
-    no-repeat center / cover;
+  background: url(../img/rainbow.png) no-repeat center / cover;
   width: 210px;
   height: 140px;
   z-index: var(--z-index-back);
@@ -2821,14 +2796,12 @@ td {
 }
 
 .entry-kengaku_img-wrap__01::before {
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/point1.png)
-    no-repeat center / cover;
+  background: url(../img/point1.png) no-repeat center / cover;
 }
 
 .entry-kengaku_img-wrap__02::before {
   left: 0;
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/point2.png)
-    no-repeat center / cover;
+  background: url(../img/point2.png) no-repeat center / cover;
 }
 
 .entry-kengaku_hope_list {
@@ -2877,13 +2850,11 @@ td {
 }
 
 .entry-kengaku_hope_comment__01::before {
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/hukidashi-left.svg)
-    no-repeat center / cover;
+  background: url(../img/hukidashi-left.svg) no-repeat center / cover;
 }
 
 .entry-kengaku_hope_comment__02::before {
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/hukidashi-right.svg)
-    no-repeat center / cover;
+  background: url(../img/hukidashi-right.svg) no-repeat center / cover;
 }
 
 .entry-kengaku_hope_img-wrap {
@@ -2931,7 +2902,7 @@ td {
 /* .entry-kengaku_hope_item::after {
   position: absolute;
   content: "";
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/kengaku-ledy.png) no-repeat center / cover;
+  background: url(../img/kengaku-ledy.png) no-repeat center / cover;
   width: 100px;
   height: 139px;
   top: 130%;
@@ -2978,7 +2949,7 @@ td {
 
 /* -----------------faq-page--------------- */
 .faq_contents {
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/bg-sp.png);
+  background: url(../img/bg-sp.png);
 }
 
 .faq-kv {
@@ -2986,8 +2957,7 @@ td {
       rgba(217, 217, 217, 0.5),
       rgba(217, 217, 217, 0.5)
     ),
-    url(https://chikakomaeda.github.io/sample-nursery.github.io/img/toukousyo.jpg)
-      no-repeat center center/cover;
+    url(../img/toukousyo.jpg) no-repeat center center/cover;
 }
 
 /*アコーディオン全体*/

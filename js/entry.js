@@ -5,7 +5,7 @@ scrollAreasSub.forEach(function (scrollAreas) {
 });
 
 // 左右から出てくるやつ
-const KengakuItem = document.querySelectorAll(".entry-kengaku_list>li");
+const KengakuItem = document.querySelectorAll(".entry-kengaku_item");
 console.log(KengakuItem);
 
 KengakuItem.forEach(function (KengakuItem, index) {

@@ -1677,7 +1677,7 @@ td {
 
 /* ページネーション */
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: -2px;
+  bottom: -45px;
 }
 
 .about-feature_contents {

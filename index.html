@@ -4,10 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>架空:くさつなかよし園</title>
+    <meta name="KusatsuNakayoshi-nursery" content="架空：くさつなかよし園" />
+    <!-- favicon/web-clip-icon -->
+    <link
+      rel="icon"
+      href="https://chikakomaeda.github.io/sample-nursery.github.io/img/favicon.ico"
+      type="image/ico"
+    />
+    <link
+      rel="icon"
+      href="https://chikakomaeda.github.io/sample-nursery.github.io/img/favicon.png"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://chikakomaeda.github.io/sample-nursery.github.io/img/favicon.png"
+    />
+    <!-- ogp -->
+    <meta property="og:site_name" content="KusatsuNakayoshi-nurserySchool" />
+    <meta
+      property="og:url"
+      content="https://chikakomaeda.github.io/sample-nursery.github.io/index.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="架空:くさつなかよし園" />
+    <meta
+      property="og:description"
+      content="架空サイト：○○市にある保育園、くさつなかよし園のウェブサイトです。"
+    />
+    <meta
+      property="og:image"
+      content="https://chikakomaeda.github.io/sample-nursery.github.io/img/ogp-image.png"
+    />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:description"
+      content="架空サイト：○○市にある保育園、くさつなかよし園のウェブサイトです。"
+    />
+    <meta
+      name="twitter:image:src"
+      content="https://chikakomaeda.github.io/sample-nursery.github.io/img/favicon.png"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- cdn -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
     <!-- css -->
     <link
       rel="stylesheet"
@@ -18,13 +71,6 @@
       href="https://chikakomaeda.github.io/sample-nursery.github.io/style.css"
     />
 
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -52,7 +98,7 @@
       <h1 class="l_header-logo">
         <a href="" class="l_header-logo_link">
           <img
-            src="img/logo-sm.png"
+            src="https://chikakomaeda.github.io/sample-nursery.github.io/img/logo-sm.png"
             alt="ロゴ"
             class="l_header-logo_img"
             width="268"
@@ -102,7 +148,7 @@
       </nav>
       <!-- /.l_header-nav -->
 
-      <button class="l_header_cta-btn_wrap l_header_cta-btn_wrap__sp">
+      <button class="l_header_cta-btn_wrap">
         <a href="tel:000-000-0000" class="l_header_cta-btn" id="tel-btn">
           <img
             src="https://chikakomaeda.github.io/sample-nursery.github.io/img/icons/tel.svg"
@@ -114,20 +160,6 @@
           <span class="l_header_cta-text">お問合せ</span>
         </a>
       </button>
-      <!-- /.l_header_cta-btn_wrap -->
-      <button class="l_header_cta-btn_wrap l_header_cta-btn_wrap__pc">
-        <a href="#cta" class="l_header_cta-btn" id="tel-btn">
-          <img
-            src="https://chikakomaeda.github.io/sample-nursery.github.io/img/icons/tel.svg"
-            alt=""
-            class="l_header_cta-btn_icon"
-            width="36"
-            height="36"
-          />
-          <span class="l_header_cta-text">お問合せ</span>
-        </a>
-      </button>
-      <!-- /.l_header_cta-btn_wrap -->
     </header>
     <!-- /.l_header -->
 
@@ -412,7 +444,9 @@
               <p class="m_cta_desc">ご質問・見学について</p>
               <p class="m_cta_tel">
                 <span class="m_cta_call-icon"></span>
-                000-000-0000
+                <a href="tel:000-000-0000" class="m_cta_tel-number" id="tel-btn"
+                  >000-000-0000</a
+                >
               </p>
               <p class="m_cta_reception-time">受付時間：月～土　9:00~19:00</p>
             </div>
@@ -423,7 +457,9 @@
               <p class="m_cta_desc">入園のお手続き・制度に関して</p>
               <p class="m_cta_tel">
                 <span class="m_cta_call-icon"></span>
-                000-000-0000
+                <a href="tel:000-000-0000" class="m_cta_tel-number" id="tel-btn"
+                  >000-000-0000</a
+                >
               </p>
               <p class="m_cta_reception-time">受付時間：月～土　9:00~17:00</p>
             </div>
@@ -487,7 +523,7 @@
           <div class="l_footer-logo">
             <a href="" class="l_footer-logo_link">
               <img
-                src="img/logo-sm.png"
+                src="https://chikakomaeda.github.io/sample-nursery.github.io/img/logo-sm.png"
                 alt="ロゴ"
                 class="l_footer-logo_img"
                 width="268"
@@ -525,7 +561,7 @@
           <button class="l_footer_cta-btn_wrap">
             <a href="tel:000-000-0000" class="l_footer_cta-btn">
               <img
-                src="img/icons/tel.svg"
+                src="https://chikakomaeda.github.io/sample-nursery.github.io/img/icons/tel.svg"
                 alt=""
                 class="l_footer_cta-btn_icon"
                 width="36"
@@ -541,7 +577,7 @@
           <div class="twitter-icon_wrap">
             <a href="" class="twitter-icon_link">
               <img
-                src="img/icons/🦆 icon _twitter_.svg"
+                src="https://chikakomaeda.github.io/sample-nursery.github.io/img/icons/🦆 icon _twitter_.svg"
                 alt=""
                 class="twitter_icon"
                 width="26"
@@ -552,7 +588,7 @@
           <div class="instagram-icon_wrap">
             <a href="" class="instagram-icon_link">
               <img
-                src="img/icons/🦆 icon _instagram_.svg"
+                src="https://chikakomaeda.github.io/sample-nursery.github.io/img/icons/🦆 icon _instagram_.svg"
                 alt=""
                 class="instagram_icon"
                 width="26"
@@ -563,7 +599,7 @@
           <div class="email-icon_wrap">
             <a href="" class="email-icon_link">
               <img
-                src="img/icons/🦆 icon _mail_.svg"
+                src="https://chikakomaeda.github.io/sample-nursery.github.io/img/icons/🦆 icon _mail_.svg"
                 alt=""
                 class="email_icon"
                 width="36"
@@ -585,12 +621,11 @@
         <span class="m_hamburger-bar"></span>
         <p class="m_hamburger-bar__text"></p>
       </div>
-            <img
+      <img
         src="https://chikakomaeda.github.io/sample-nursery.github.io/img/icons/hamburger-drop.svg"
         alt=""
         class="hamburger-bg"
       />
-
     </div>
   </body>
 </html>

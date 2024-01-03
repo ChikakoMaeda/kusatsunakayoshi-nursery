@@ -54,3 +54,32 @@ $(".page-top").click(function () {
   ); //ページトップスクロールの速さ。数字が大きいほど遅くなる
   return false; //リンク自体の無効化
 });
+
+
+
+//　五育カリキュラムのスライドショー
+const slider02 = new Swiper(".about-feature_swiper", {
+  // ページネーションが必要なら追加
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  loop: true,
+  autoplay: true,
+  speed: 3000,
+
+  slidesPerView: 1,
+  spaceBetween: 32,
+  breakpoints: {
+    // 768px以上の場合
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+    },
+    // 768px以上の場合
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+  },
+});

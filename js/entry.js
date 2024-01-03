@@ -1,12 +1,6 @@
-const scrollAreasSub = document.querySelectorAll(".js-scroll-trigger");
-
-scrollAreasSub.forEach(function (scrollAreas) {
-  e(scrollAreas);
-});
-
 // 左右から出てくるやつ
-const KengakuItem = document.querySelectorAll(".entry-kengaku_item");
-console.log(KengakuItem);
+const KengakuItem = document.querySelectorAll(".entry-kengaku-list>li");
+
 
 KengakuItem.forEach(function (KengakuItem, index) {
   gsap.from(KengakuItem, {
@@ -83,19 +77,4 @@ $(".page-top").click(function () {
     1000
   ); //ページトップスクロールの速さ。数字が大きいほど遅くなる
   return false; //リンク自体の無効化
-});
-
-// ハンバーガーメニュー
-let nav = document.querySelector("#js-nav");
-let pageLink = document.getElementById("entry-kengaku-link");
-let ham = document.querySelector("#js-hamburger");
-// console.log(nav);
-ham.addEventListener("click", function () {
-  // console.log('ok');
-  ham.classList.toggle("is-active");
-  nav.classList.toggle("is-active");
-  body.classList.toggle("is_hidden");
-  pageLink.addEventListener("click", function () {
-    nav.classList.remove("is-active");
-  });
 });

@@ -921,7 +921,15 @@ td {
   .m_cercle_item {
     width: 130px;
   }
+}
 
+.about-safety_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
   .about-safety_item {
     width: 200px;
   }
@@ -2956,7 +2964,7 @@ td {
   font-weight: bold;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .entry-kengaku_hope_desc {
     text-align: center;
   }
@@ -2971,13 +2979,15 @@ td {
   margin-bottom: 40px;
 }
 
-/* @media screen and (min-width: 768px) {
-  .entry_cta_contact-message {
-  }
-} */
 
 .entry_cta_body::after {
   bottom: -20%;
+}
+
+@media screen and (min-width: 768px) {
+  .entry_cta_body::after {
+    top: 65%;
+  }
 }
 
 .entry_cta_narsary_texts {

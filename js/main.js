@@ -42,7 +42,7 @@ function openingAnime() {
 
 function webStorage() {
   if (sessionStorage.getItem("access")) {
-    
+    // body.classList.toggle("is-loaded");
   } else {
     sessionStorage.setItem("access", 0);
     openingAnime();

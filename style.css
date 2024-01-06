@@ -377,6 +377,7 @@ td {
     background: transparent;
     height: 80px;
     margin-right: auto;
+    padding-bottom: 0;
   }
 }
 

@@ -22,7 +22,7 @@ if (!sessionStorage.getItem(keyName)) {
 }
 
 // オープニングアニメーション
-const body = document.querySelector("#js-body");
+const body = document.querySelector(".js-body");
 function openingAnime() {
   body.classList.toggle("is-loaded");
   gsap
@@ -76,7 +76,7 @@ const ham = document.querySelector("#js-hamburger");
 ham.addEventListener("click", function () {
   ham.classList.toggle("is-active");
   nav.classList.toggle("is-active");
-  body.classList.toggle("is_hidden");
+  body.classList.toggle("is-loaded");
   pageLink.addEventListener("click", function () {
     nav.classList.remove("is-active");
   });

@@ -209,7 +209,7 @@ td {
 .page-top {
   position: fixed;
   right: 24px;
-  z-index: var(--z-index-page-top);
+  z-index: 2;
   /*はじめは非表示*/
   opacity: 0;
   transform: translateY(100px);
@@ -351,7 +351,6 @@ td {
 
 .l_header-logo_img {
   height: 80px;
-  width: auto;
 }
 
 .l_header-nav {
@@ -365,7 +364,7 @@ td {
   transform: translateX(100%);
   background: #fff;
   transition: ease 0.4s;
-  /* z-index: var(--z-index-default); */
+  /* z-index: 1; */
 }
 
 @media screen and (min-width: 1024px) {
@@ -381,21 +380,14 @@ td {
 
 .l_header-nav_bg {
   width: 100%;
-  height: 94px;
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-drops.png)
-    repeat-x;
-  background-size: 50%;
+  height: 15%;
+  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-drop_ham-bg.svg)
+    center / cover;
 }
 
 @media screen and (min-width: 600px) {
   .l_header-nav_bg {
-    background-size: 40%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .l_header-nav_bg {
-    background-size: 30%;
+    background-size: contain;
   }
 }
 
@@ -475,6 +467,20 @@ td {
   font-size: 16px;
   font-weight: bold;
   color: var(--white-color);
+}
+
+.l_header_cta-btn_wrap__pc {
+  display: none;
+}
+
+@media screen and (min-width: 640px) {
+  .l_header_cta-btn_wrap__sp {
+    display: none;
+  }
+
+  .l_header_cta-btn_wrap__pc {
+    display: block;
+  }
 }
 
 .l_footer {
@@ -648,7 +654,7 @@ td {
   width: 85px;
   height: 85px;
   position: relative;
-  z-index: var(--z-index-modal);
+  z-index: 200;
   border: none;
   transition: 1s;
 }
@@ -658,6 +664,17 @@ td {
   top: 0;
   left: 0;
 }
+
+/* 疑似要素で背景挿入 */
+/* .m_hamburger::before {
+  position: absolute;
+  content: "";
+  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/icons/hamburger-drop.svg) no-repeat;
+  top: 0;
+  left: 0;
+  width: 85px;
+  height: 95px;
+} */
 
 @media screen and (min-width: 1024px) {
   .m_hamburger {
@@ -816,7 +833,7 @@ td {
   font-family: var(--title-font);
   text-align: center;
   position: relative;
-  z-index: var(--z-index-default);
+  z-index: 1;
   display: inline-block;
 }
 
@@ -903,15 +920,7 @@ td {
   .m_cercle_item {
     width: 130px;
   }
-}
 
-.about-safety_item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media screen and (min-width: 1024px) {
   .about-safety_item {
     width: 200px;
   }
@@ -1157,17 +1166,17 @@ td {
 /* Google Mapを囲う要素 */
 .m_access_map-wrap {
   position: relative;
-  z-index: var(--z-index-default);
+  z-index: 1;
   width: 100%;
   height: 0;
   padding-top: 75%;
-  /* 比率を4: 3に固定; */
+  比率を4: 3に固定;
 }
 
 /* Google Mapのiframe */
 .m_access_map-wrap iframe {
   position: absolute;
-  z-index: var(--z-index-back);
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
@@ -1315,7 +1324,7 @@ td {
 }
 
 /* .top-about_container {
-  z-index: var(--z-index-back);
+  z-index: -1;
 } */
 
 @media screen and (min-width: 1024px) {
@@ -1328,7 +1337,7 @@ td {
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  z-index: var(--z-index-default);
+  z-index: 1;
   /* height: 394px; */
 }
 
@@ -1349,7 +1358,7 @@ td {
       no-repeat center / cover;
     width: 360px;
     height: 650px;
-    z-index: var(--z-index-back);
+    z-index: -1;
     margin-right: calc(50% - 50vw);
   }
   /* .top-about_body::after {
@@ -1361,7 +1370,7 @@ td {
     background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-drops_top-about_bg.svg) no-repeat center / contain;
     width: 1920px;
     height: 892px;
-    z-index: var(--z-index-back);
+    z-index: -1;
     margin-right: calc(50% - 50vw);
   } */
 }
@@ -1694,7 +1703,7 @@ td {
 }
 
 /* ページネーション */
-.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+.about-feature_body.swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: -45px;
 }
 
@@ -1796,7 +1805,7 @@ td {
 
 .about-rules {
   overflow: hidden;
-  /* z-index: var(--z-index-default); */
+  /* z-index: 1; */
 }
 
 .about-rules_body {
@@ -1813,7 +1822,7 @@ td {
   .about-rules_body {
     text-align: center;
     position: relative;
-    z-index: var(--z-index-default);
+    z-index: 1;
   }
 
   .about-rules_body::after {
@@ -1825,7 +1834,7 @@ td {
       no-repeat center / cover;
     width: 360px;
     height: 760px;
-    z-index: var(--z-index-back);
+    z-index: -1;
     margin-right: calc(50% - 50vw);
   }
 }
@@ -2134,13 +2143,6 @@ td {
 }
 
 @media screen and (min-width: 1024px) {
-  .about_cta {
-    position: relative;
-    z-index: var(--z-index-contents);
-  }
-}
-
-@media screen and (min-width: 1024px) {
   .about-cta_body::after {
     display: none;
   }
@@ -2152,7 +2154,8 @@ td {
 
 @media screen and (min-width: 1024px) {
   .about-footer {
-    z-index: var(--z-index-default);
+    /* overflow: hidden; */
+    /* z-index: -1; */
   }
 }
 
@@ -2160,6 +2163,7 @@ td {
   .about_footer-inner::after {
     display: block;
     right: 0;
+    /* position: fixed; */
   }
 }
 
@@ -2238,7 +2242,7 @@ td {
       no-repeat center / contain;
     width: 1808px;
     height: 1920px;
-    z-index: var(--z-index-back);
+    z-index: -1;
     /* margin-right: calc(50% - 50vw); */
   }
 }
@@ -2283,7 +2287,7 @@ td {
   transform: translate(-50%, -50%);
   background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-yellowgreen.svg)
     no-repeat center / cover;
-  z-index: var(--z-index-back);
+  z-index: -1;
 }
 
 .time-schedule_hour {
@@ -2372,7 +2376,7 @@ td {
 
 .hoiku-event_bg-ribbon {
   position: relative;
-  z-index: var(--z-index-default);
+  z-index: 1;
 }
 
 @media screen and (min-width: 1024px) {
@@ -2385,7 +2389,7 @@ td {
       no-repeat center / cover;
     width: 420px;
     height: 158px;
-    z-index: var(--z-index-back);
+    z-index: -1;
   }
 }
 
@@ -2493,7 +2497,7 @@ td {
   border-right: 75px solid transparent;
   border-left: 75px solid transparent;
   border-bottom: 0;
-  z-index: var(--z-index-default);
+  z-index: 1;
 }
 
 @media screen and (min-width: 1024px) {
@@ -2561,7 +2565,7 @@ td {
   text-align: center;
   position: relative;
   text-shadow: 0 1px 1px rgba(225, 225, 225, 0.16);
-  z-index: var(--z-index-default);
+  z-index: 1;
 }
 
 .entry-flow_step_number::before {
@@ -2574,7 +2578,7 @@ td {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(140deg);
-  z-index: var(--z-index-back);
+  z-index: -1;
 }
 
 .entry-flow_step_ttl {
@@ -2632,7 +2636,7 @@ td {
   right: 1px;
   bottom: 1px;
   left: 1px;
-  z-index: var(--z-index-back);
+  z-index: -1;
 }
 
 .entry-flow_caution {
@@ -2644,7 +2648,7 @@ td {
 }
 
 .entry-flow_caution_contents {
-  z-index: var(--z-index-default);
+  z-index: 1;
   letter-spacing: normal;
 }
 
@@ -2803,7 +2807,6 @@ td {
 
   .entry-kengaku_item:first-child {
     flex-direction: row-reverse;
-    margin-bottom: 64px;
   }
 }
 
@@ -2870,7 +2873,7 @@ td {
   text-align: center;
   letter-spacing: normal;
   font-weight: bold;
-  z-index: var(--z-index-default);
+  z-index: 1;
 }
 
 .entry-kengaku_hope_comment::before {
@@ -2881,7 +2884,7 @@ td {
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: var(--z-index-back);
+  z-index: -1;
 }
 
 .entry-kengaku_hope_comment__01::before {
@@ -2916,7 +2919,7 @@ td {
 @media screen and (min-width: 1024px) {
   .entry-kengaku_hope_img-wrap__01 {
     margin-left: 100px;
-    z-index: var(--z-index-default);
+    z-index: 1;
   }
 }
 
@@ -2928,7 +2931,7 @@ td {
 @media screen and (min-width: 1024px) {
   .entry-kengaku_hope_img-wrap__02 {
     margin-right: 100px;
-    z-index: var(--z-index-default);
+    z-index: 1;
   }
 }
 
@@ -2952,7 +2955,7 @@ td {
   font-weight: bold;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .entry-kengaku_hope_desc {
     text-align: center;
   }

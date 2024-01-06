@@ -195,3 +195,15 @@ $(".page-top").click(function () {
   ); //ページトップスクロールの速さ。数字が大きいほど遅くなる
   return false; //リンク自体の無効化
 });
+
+// top-kvにフィルターをかける
+const topKvImages = document.querySelectorAll(
+  ".top-kv .swiper_area .top-kv-swiper .swiper-slide img"
+);
+
+console.log(topKvImages);
+
+// 例: フィルターを追加する
+topKvImages.forEach(function (img) {
+  img.style.filter = "rgba(217, 217, 217, 0.8)"; // ここで適用するスタイルを変更できます
+});

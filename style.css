@@ -1712,8 +1712,8 @@ td {
 }
 
 /* ページネーション */
-.about-feature_body.swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: -45px;
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -2px;
 }
 
 .about-feature_contents {

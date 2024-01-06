@@ -351,6 +351,7 @@ td {
 
 .l_header-logo_img {
   height: 80px;
+  object-fit: cover;
 }
 
 .l_header-nav {

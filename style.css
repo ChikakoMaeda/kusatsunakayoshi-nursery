@@ -2411,7 +2411,6 @@ td {
 @media screen and (min-width: 1024px) {
   .hoiku-event_img-wrap {
     width: 49%;
-    max-width: 343px;
   }
 }
 

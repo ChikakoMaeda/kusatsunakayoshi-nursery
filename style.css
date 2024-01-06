@@ -1713,7 +1713,7 @@ td {
 
 /* ページネーション */
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: -2px;
+  bottom: -55px;
 }
 
 .about-feature_contents {
@@ -2807,11 +2807,17 @@ td {
   }
 }
 
-.entry-kengaku_list {
+.entry-kengaku-list {
   display: flex;
   flex-direction: column;
   gap: 40px;
   margin-top: 64px;
+}
+
+@media screen and (min-width: 1024px) {
+  .entry-kengaku-list {
+    gap: 64px;
+  }
 }
 
 @media screen and (min-width: 1024px) {

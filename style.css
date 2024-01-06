@@ -2152,6 +2152,13 @@ td {
 }
 
 @media screen and (min-width: 1024px) {
+  .about_cta {
+    position: relative;
+    z-index: var(--z-index-contents);
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .about-cta_body::after {
     display: none;
   }
@@ -2163,8 +2170,7 @@ td {
 
 @media screen and (min-width: 1024px) {
   .about-footer {
-    /* overflow: hidden; */
-    /* z-index: -1; */
+    z-index: var(--z-index-default);
   }
 }
 
@@ -2172,9 +2178,9 @@ td {
   .about_footer-inner::after {
     display: block;
     right: 0;
-    /* position: fixed; */
   }
 }
+
 
 /* -----------hoiku-page-------------- */
 .hoiku-kv {

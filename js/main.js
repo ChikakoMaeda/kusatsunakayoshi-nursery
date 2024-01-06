@@ -44,7 +44,7 @@ function webStorage() {
   if (sessionStorage.getItem("access")) {
      body.classList.remove("is-loaded");
   } else {
-    sessionStorage.setItem("access", 0);
+    sessionStorage.setItem("access", 1);
     openingAnime();
   }
 }

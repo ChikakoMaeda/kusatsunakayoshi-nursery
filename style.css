@@ -1276,9 +1276,9 @@ td {
   left: -15px;
   width: 192px;
   height: 125px;
-  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/kengaku-icon.png)
-    no-repeat center / cover;
+  background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-kengaku-icon_bg.png) no-repeat center / cover;
   z-index: var(--z-index-menu);
+  transform: rotate(350deg);
 }
 
 @media screen and (min-width: 1024px) {
@@ -1286,6 +1286,18 @@ td {
     left: auto;
     right: 15px;
   }
+}
+
+.kengaku-icon_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 19px;
+  color: var(--black-color);
+  letter-spacing: normal;
+  line-height: normal;
 }
 
 /* top-about */
@@ -1334,10 +1346,6 @@ td {
   }
 }
 
-/* .top-about_container {
-  z-index: -1;
-} */
-
 @media screen and (min-width: 1024px) {
   .top-about_container {
     position: relative;
@@ -1372,18 +1380,6 @@ td {
     z-index: -1;
     margin-right: calc(50% - 50vw);
   }
-  /* .top-about_body::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: url(https://chikakomaeda.github.io/sample-nursery.github.io/img/sui-drops_top-about_bg.svg) no-repeat center / contain;
-    width: 1920px;
-    height: 892px;
-    z-index: -1;
-    margin-right: calc(50% - 50vw);
-  } */
 }
 
 .top-about_img-wrap {

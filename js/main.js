@@ -23,8 +23,8 @@ if (!sessionStorage.getItem(keyName)) {
 
 // オープニングアニメーション
 const body = document.querySelector(".js-body");
+
 function openingAnime() {
-  body.classList.toggle("is-loaded");
   gsap
     .timeline(function () {})
     .from(body, {
@@ -34,17 +34,20 @@ function openingAnime() {
     })
     .from(".top-kv_copy", {
       duration: 2.5,
-      // delay: 1,
       autoAlpha: 0,
       y: 100,
+    })
+    .call(() => {
+      // アニメーションが終了したらis-loadedを削除
+      body.classList.remove("is-loaded");
     });
 }
 
 function webStorage() {
-  if (sessionStorage.getItem("access")) {
-     body.classList.remove("is-loaded");
+  if (sessionStorage.getItem("visit")) {
+    body.classList.remove("is-loaded");
   } else {
-    sessionStorage.setItem("access", 1);
+    sessionStorage.setItem("visit", "true");
     openingAnime();
   }
 }
@@ -73,6 +76,7 @@ kvSwiper();
 const nav = document.querySelector("#js-nav");
 const pageLink = document.querySelector("#entry-kengaku-link");
 const ham = document.querySelector("#js-hamburger");
+
 ham.addEventListener("click", function () {
   ham.classList.toggle("is-active");
   nav.classList.toggle("is-active");
@@ -201,9 +205,6 @@ const topKvImages = document.querySelectorAll(
   ".top-kv .swiper_area .top-kv-swiper .swiper-slide img"
 );
 
-console.log(topKvImages);
-
-// 例: フィルターを追加する
 topKvImages.forEach(function (img) {
   img.style.filter = "rgba(217, 217, 217, 0.8)"; // ここで適用するスタイルを変更できます
 });
